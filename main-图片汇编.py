@@ -3,7 +3,7 @@ from PIL import Image
 Average = 0
 list1=[]
 output =[]
-image_name_lj = input("文件夹路径：(路径，以\结尾)\n")
+image_name_lj = input("文件夹路径：(文件夹的路径，以\结尾)\n")
 image_name_start = input("文件名(不含后面的数字)：\n")
 image_name_end = input("文件类型（尾缀）如.jpg  .png:\n")
 ccdd = int(input("有多少个文件？\n"))
