@@ -103,12 +103,12 @@ for i in range(256):
         for m in ysbm[i]:
             out_ysbm[i]+=m<<n
             n +=1            
-with open('元素编码.txt','w')as file:
+with open('每个元素的编码.txt','w')as file:
     file.write(f'{out_ysbm}')
 print("元素编码数据已存储")
 with open('编码长度.txt','w')as file:
     file.write(f'{out_bmcd}')
-print("编码长度数据已存储")
+print("编码长度数据已存储。注意：未出现过的显示可能性元素的编码为1，编码长为0，这样可减少最长的没有出现过编码和最大编码长度")
 
 aaa=input("按下任意键退出")
 #for i in range(statistics.count(0)):
